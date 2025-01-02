@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management | School Management System</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Manage Students</h2>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Name</label>
+                <input type="text" class="form-control" id="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="studentAge">Age</label>
+                <input type="number" class="form-control" id="studentAge" required>
+            </div>
+            <div class="form-group">
+                <label for="studentGrade">Grade</label>
+                <input type="text" class="form-control" id="studentGrade" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Add Student</button>
+        </form>
+
+        <div class="mt-4">
+            <h4>Student List</h4>
+            <!-- List of students will be shown here -->
+            <ul id="studentList" class="list-group">
+                <!-- Dynamic list items go here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
